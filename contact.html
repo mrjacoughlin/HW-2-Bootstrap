@@ -3,12 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css/" />
-
-    <title>Contact Me</title>
-  </head>
-
-  <link
+    <link rel="stylesheet" href="styles.css" />
+    <link
     rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
@@ -29,9 +25,12 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"
   ></script>
-
+   
+  <title>Contact Me</title>
+  
+</head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:lightslategrey;">
       <a class="navbar-brand" href="#">Contact Me</a>
       <button
         class="navbar-toggler"
@@ -53,7 +52,7 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href='https://www.linkedin.com/in/james-coughlin-428a1747/'>Link</a>
+            <a class="nav-link" href="https://www.linkedin.com>Link"> </a>
           </li>
           <li class="nav-item dropdown">
             <a
@@ -77,43 +76,34 @@
           </li>
       </div>
     </nav>    
-        </div>
+    <div class="container">
+      <div style="text-align:center">
+        <h2>Contact Info</h2>
+        <p>Feel Free to Shoot Me a Message!!</p>
       </div>
-      <br />
       <div class="row">
-        <div class="col-lg-12">
-          <!-- The content in this div gets wrapped in a card -->
-          <div class="card">
-            <div class="card-body">
-              <div class="text-center">
-                <img class="" src="http://placehold.it/50x50" alt="" />// picture of me 
-              </div>
-            </div>
-          </div>
+        <div class="column">
+          <img src="../HW-2-Bootstrap/ukmap.jpg" style="max-width: 50%; max-height: 50%;">
+        </div>
+        <div class="column">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <input type="submit" value="Submit">
+          </form>
         </div>
       </div>
     </div>
-    <div class="container">
-        <div style="text-align:center">
-          <h2>Contact Me</h2>
-          <p> "life is like a box of chocolates, open them up and see what you get!"</p>
-        </div>
-        <div class="row">
-          <div class="column">
-            <img src="/w3images/map.jpg" style="width:100%"> // picture of me 
-          </div>
-          <div class="column">
-            <form action="/action_page.php">
-              <label for="fname">James </label>
-              <label for="lname">Coughlin</label>
-              <label for="country">Country</label>
-              <select id="country" name="country">
-                <option value="usa">USA</option>
-              </select>
-            </form>
-          </div>
-        </div>
-      </div>
   </body>
 </html>
 
